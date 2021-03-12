@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        <div id="background">
+        
+    </div>
+    <img src="img/background.jpg" alt="">
+    <div id="container">
+        -->
+        <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a survey</p>
+        </header>
+        <form  id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" required placeholder="enter your email">
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" id="number" min="10" max="99" placeholder="enter your age">
+            </div>
+            <div class="form-group">
+                <p>What is your current situation at the moment</p>
+                <select name="role" id="dropdown">
+                    <option disabled selected value>Select your option</option>
+                    <option value="student">Student</option>
+                    <option value="self-tought">Self-tought</option>
+                    <option value="part-job">Part-jop</option>
+                    <option value="preferNoToSay">I prefer no to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend our product to a friend?</p>
+                <label >
+                    <input type="radio" name="user-recommendation" value="Sure">Sure
+                </label>
+                <label >
+                    <input type="radio" name="user-recommendation" value="I'm not sure">I'm not sure
+                </label>
+                <label >
+                    <input type="radio" name="user-recommendation" value="Maybe">Maybe
+                </label>
+                <label >
+                    <input type="radio" name="user-recommendation">No, i don't think so
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Do you have any suggestions?</p>
+                <textarea name="comment" id="comments" placeholder="Enter your suggestions here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
